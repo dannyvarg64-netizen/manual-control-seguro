@@ -440,10 +440,6 @@
             reportes: deficienciasEncontradas
         };
 
-        if(WEB_APP_URL === "PEGA_AQUI_TU_URL_DE_GOOGLE_APPS_SCRIPT" || WEB_APP_URL.trim() === "") {
-            alert("Atención: No has pegado la URL de tu Google Script en la parte superior del código (Variable WEB_APP_URL).");
-            return;
-        }
 
         fetch(WEB_APP_URL, {
             method: "POST",
